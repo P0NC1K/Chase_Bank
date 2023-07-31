@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FAVICON -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="assets/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/82140ee0e8.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BOOTSTRAp -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="homepage.css" />
+    <title>
+      Credit Card, Mortgage, Banking, Auto | Chase Online | Chase.com
+    </title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="nav_container_flex">
+          <div class="nav_left_side">
+            <div class="burger-menu">
+              <button class="burger-btn">
+                <div class="btn-primary"></div>
+              </button>
+            </div>
+            <div class="logo">
+              <a href="homepage.html">
+                <img src="assets/images/homepage/logo.png" alt="logo"
+              /></a>
+            </div>
+          </div>
+
+          <ul class="nav_links">
+            <li class="nav_link">
+              <a href="#">
+                <img src="assets/images/homepage/glass.png" alt=""
+              /></a>
+            </li>
+            <li class="nav_link">
+              <a href="#">
+                <img src="assets/images/homepage/flag.png" alt=""
+              /></a>
+            </li>
+            <li class="nav_link">
+              <a href="#"
+                ><img src="assets/images/homepage/account.png" alt=""
+              /></a>
+            </li>
+            <li class="nav_link"><a href="#">Sign out</a></li>
+          </ul>
+        </div>
+        <ul class="nav_alt_links">
+          <li class="nav_alt_link"><a href="#">Accounts</a></li>
+          <li class="nav_alt_link hover-pay-transfer">
+            <a class="padding-link" href="pay.html">Pay & transfer</a>
+            <div class="pay-transfer-hover">
+              <div class="pay-transfer-hover-grid">
+                <div class="pay-transfer-left-side">
+                  <p class="pay-bold"><a href="pay.html">PAY</a></p>
+                  <p class="pay-regular">
+                    <a href="#">Pay bills & send money with Zelle®</a>
+                  </p>
+                  <p class="pay-regular"><a href="#">Send a gift</a></p>
+                  <p class="pay-regular"><a href="">Payment activity</a></p>
+                </div>
+                <div class="bar-grid"></div>
+                <div class="pay-transfer-right-side">
+                  <p class="pay-bold">
+                    <a href="schedule-transfer.html">TRANSFER</a>
+                  </p>
+                  <p class="pay-regular">
+                    <a href="schedule-transfer.html">Transfer money</a>
+                  </p>
+                  <p class="pay-regular">
+                    <a href="#">Wires & global transfers</a>
+                  </p>
+                  <p class="pay-regular">
+                    <a href="#">Card balance transfers</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav_alt_link">
+            <a href="plan-track.html">Plan & track</a>
+          </li>
+          <li class="nav_alt_link"><a href="#">Investments</a></li>
+          <li class="nav_alt_link">
+            <a href="security-page.html">Security</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="bank-accounts card">
+        <div class="bank-accounts-container">
+          <div class="bank_accounts_header card-header">
+            <p class="bank-accounts-title card-title">Bank accounts</p>
+            <div class="bank-accounts-info">
+              <div class="bank-accounts-info-img">
+                <img src="assets/images/homepage/info-icon.png" alt="" />
+              </div>
+              <div class="bank-accounts-info-chevron card-header-chevron">
+                <button class="-bank-accounts-info-chevron">
+                  <i class="fa-solid fa-chevron-up"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="bank-accounts-content-container">
+            <div class="bank-accounts-content card-content">
+              <div class="checking-flex">
+                <p class="checking-text">
+                  TOTAL CHECKING (...5532)
+                  <i class="fa-solid fa-chevron-right"></i>
+                </p>
+                <div class="transfer-money">
+                  <div class="security-icon">
+                    <img
+                      src="assets/images/homepage/security-icon.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="security-link">
+                    <a href="#" class="btn btn-outline-primary"
+                      >Transfer money</a
+                    >
+                  </div>
+                  <div class="security-link">
+                    <a href="#" class="btn btn-outline-primary"
+                      >More <i class="fa-solid fa-chevron-down"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="balance-flex">
+                <div class="bank-accounts-balance">
+                  <div class="balance-list">
+                    <p class="balance">$34,738.62</p>
+                    <p class="balance-text">Available balance</p>
+                  </div>
+                </div>
+                <div class="deposit-withdraw">
+                  <div class="deposit">
+                    <ul>
+                      <li class="money-balance">+$18,500.16</li>
+                      <li class="money-underline-text">Deposits this month</li>
+                    </ul>
+                  </div>
+                  <div class="withdraw">
+                    <ul>
+                      <li class="money-balance">-$4,943.03</li>
+                      <li class="money-underline-text">
+                        Withdrawls this mouth
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="credit-cards card">
+        <div class="credit-cards-container">
+          <div class="card-header credit-cards-header">
+            <p class="card-title">Credit cards</p>
+            <div class="card-header-chevron">
+              <i class="fa-solid fa-chevron-up"></i>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="checking-flex">
+              <div class="checking-text">
+                CREDIT CARD (...7177) <i class="fa-solid fa-chevron-right"></i
+                ><span class="interest-saving">Interest Saving plan®</span>
+              </div>
+              <div class="transfer-money credit-cards-transfer">
+                <div class="security-link">
+                  <a href="#" class="btn btn-outline-primary">Pay card</a>
+                </div>
+                <div class="security-link">
+                  <a href="#" class="btn btn-outline-primary"
+                    >More <i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <p class="card-disclaimer">
+              <img src="assets/images/homepage/check.svg" alt="" /> You don't
+              have a minimum payment due right now
+            </p>
+            <div class="balance-flex">
+              <ul>
+                <li class="balance">$1,331.44</li>
+                <li class="balance-text">Current balance</li>
+                <li>
+                  <a href="#" class="balance-details"
+                    >Details <i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                </li>
+              </ul>
+              <div class="visa-card">
+                <img src="assets/images/homepage/visa-card.jpeg" alt="" />
+              </div>
+            </div>
+            <div class="credit-card-footer">
+              <ul class="credit-card-footer-list">
+                <li>
+                  <ul>
+                    <li class="money-balance">Aug 12, 2023</li>
+                    <li class="money-underline-text smaller-text">
+                      Payment due date
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li class="money-balance">$0.00</li>
+                    <li class="balance-text smaller-text">
+                      Minimum payment due
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li class="money-balance">$830.12</li>
+                    <li class="balance-text smaller-text">
+                      Interest saving balance
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li class="money-balance">$23,668.56</li>
+                    <li class="money-underline-text smaller-text">
+                      Available credit
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="external-accounts card">
+        <div class="external-accounts-container">
+          <div class="external-accounts-header card-header header-noborder">
+            <p class="external-accounts-title card-title">External accounts</p>
+            <p class="card-header-chevron blue-header">
+              Sync | ... <i class="fa-solid fa-chevron-up chevron-margin"></i>
+            </p>
+          </div>
+          <div class="external-accounts- card-header">
+            <p class="assets-text">
+              Total Assets: <span class="bold-external">$122,445.91</span>
+              <span class="liabilities"
+                >Total Liabilities:
+                <span class="bold-external">$1,331.44</span></span
+              >
+            </p>
+          </div>
+          <div class="external-accounts-content card-content">
+            <div class="wells-fargo content-flex">
+              <div class="section-title">Wells Fargo Bank (2)</div>
+              <div class="chevron-bank-name">
+                <i class="fa-solid fa-chevron-up"></i>
+              </div>
+            </div>
+            <div class="content-flex border-accounts">
+              <div class="accounts-text">
+                <div class="accounts-text-inside">Accounts</div>
+                <div class="two-chevrons">
+                  <div class="chevron-up-block">
+                    <i class="fa-solid fa-chevron-up"></i>
+                  </div>
+                  <div class="chevron-down-block">
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="accounts-text">
+                <div class="accounts-text-inside">Type</div>
+                <div class="two-chevrons">
+                  <div class="chevron-up-block">
+                    <i class="fa-solid fa-chevron-up"></i>
+                  </div>
+                  <div class="chevron-down-block">
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="accounts-text">
+                <div class="accounts-text-inside">Value</div>
+
+                <div class="two-chevrons">
+                  <div class="chevron-up-block">
+                    <i class="fa-solid fa-chevron-up"></i>
+                  </div>
+                  <div class="chevron-down-block">
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cashback-flex content-flex">
+              <div class="blue-header cashback-header">
+                CASHBACK DEBIT (...1418)
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+              <div class="value-text checkings-text">Checking</div>
+              <div class="value-text">$0.00</div>
+            </div>
+            <div class="cashback-flex content-flex">
+              <div class="blue-header cashback-header">
+                ONLINE SAVINGS (...1112)
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+              <div class="value-text savings-text">Savings</div>
+              <div class="value-text">$87,707.29</div>
+            </div>
+            <p class="disclaimer-accounts">As of 4:11 AM ET on 7/17/2023</p>
+            <div class="discover-card discover-card-margin content-flex">
+              <div class="discover-card-text section-title">
+                Discover Card (1)
+              </div>
+              <i class="fa-solid fa-chevron-down chevron-bank-name"></i>
+            </div>
+            <div class="discover-card content-flex">
+              <div
+                class="discover-card-text fidelity-investments section-title"
+              >
+                Fidelity Investments (3)
+              </div>
+              <i class="fa-solid fa-chevron-down chevron-bank-name"></i>
+            </div>
+            <div>
+              <div class="discover-card content-flex">
+                <div
+                  class="discover-card-text fidelity-investments section-title"
+                >
+                  PayPal (2)
+                </div>
+                <i class="fa-solid fa-chevron-down chevron-bank-name"></i>
+              </div>
+              <p class="update-text">
+                <img src="assets/images/homepage/orange-circle.svg" alt="" />We
+                weren't able to update your information.
+                <a href="" class="blue-link"
+                  >Update <i class="fa-solid fa-chevron-right"></i
+                ></a>
+              </p>
+            </div>
+            <div>
+              <div class="discover-card content-flex">
+                <div
+                  class="discover-card-text fidelity-investments section-title"
+                >
+                  SoFi (1)
+                </div>
+                <i class="fa-solid fa-chevron-down chevron-bank-name"></i>
+              </div>
+              <p class="update-text">
+                <img src="assets/images/homepage/orange-circle.svg" alt="" />We
+                weren't able to update your information.
+                <a href="" class="blue-link"
+                  >Update <i class="fa-solid fa-chevron-right"></i
+                ></a>
+              </p>
+            </div>
+            <div class="discover-card content-flex">
+              <div
+                class="discover-card-text fidelity-investments section-title"
+              >
+                TD Ameritrade (1)
+              </div>
+              <i class="fa-solid fa-chevron-down chevron-bank-name"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scan-card card">
+        <div class="scan-card-container"></div>
+        <div class="card-content">
+          <div class="content-flex content-flex-width">
+            <div class="img-phone">
+              <img src="assets/images/homepage/phone.svg" alt="" />
+            </div>
+            <div class="text-block-scan">
+              <p class="primary-text">Scan. Send. Repeat - with Zelle®</p>
+              <p class="subtitle-scan">
+                Send and receive money fast. Just scan your friend's Zelle® QR
+                code or share yours, right from the Chase Mobile® app.
+              </p>
+              <p class="scan-link">
+                <a href="#"
+                  >Continue <i class="fa-solid fa-chevron-right"></i
+                ></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-container">
+          <div class="card-title content-flex">
+            <div class="section-title">See all transactions</div>
+            <div class="chevron-title">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="accounts-accordeon">
+            Accounts
+            <span class="accordeon-border"
+              >TOTAL CHECKING (...5532)
+              <i class="fa-solid fa-chevron-down left-margin-chevron"></i
+            ></span>
+          </div>
+          <div class="transaction-content">
+            <div class="transactions-grid">
+              <div class="transaction-title">Date</div>
+              <div class="transaction-title">Description</div>
+              <div class="transaction-title">Amount</div>
+            </div>
+            <div class="transaction-content-grid">
+              <div class="transaction-date pending-transaction">
+                <span class="pending-underline">Pending (4)</span>
+              </div>
+              <div class="transaction-description">
+                <div class="transaction-flex">
+                  <div class="transaction-description-content">
+                    ORIG CO NAME: Wells Fargo CO ENTRY SEC:WEB IND ID:6760 ORIG
+                    <br />
+                    ID:2510340545
+                  </div>
+                  <div class="transaction-amount-item">-$89.51</div>
+                </div>
+                <div class="transaction-flex">
+                  <div class="transaction-description-content">
+                    ORIG CO NAME:BEST BUY CO ENTRY DESCR:ONLINE PUR SEC:WEB IND
+                    <br />
+                    ID:62111632876524312 ORIG ID:CITICTP
+                  </div>
+                  <div class="transaction-amount-item">-$325.00</div>
+                </div>
+                <div class="transaction-flex">
+                  <div class="transaction-description-content">
+                    ORIG CO NAME:AMC CO ENTRY DESCR:CINEMA SEC:WEB IND
+                    ID:3625833
+                    <br />
+                    ORIG ID:7654477310
+                  </div>
+                  <div class="transaction-amount-item">-$18.46</div>
+                </div>
+                <div>
+                  <div class="transaction-flex">
+                    <div class="transaction-description-content">
+                      ORIG CO NAME:MGM DESCR:HOTLE-STY SEC:WEB IND ID:34567820
+                      ORIG
+                      <br />
+                      ID:72990282628
+                    </div>
+                    <div class="transaction-amount-item">-$1820.25</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="transaction-date-july">Jul 14, 2023</div>
+
+              <div class="transaction-description-content-last">
+                <div class="transaction-flex noborder-transaction">
+                  <div class="american-express">
+                    AMERICAN EXPRESS ACH PMT 226789 WEB ID: 3105678092
+                    <img src="assets/images/homepage/green-phone.svg" alt="" />
+                    <div class="blue-link bill-pay">
+                      <a href="#"
+                        ><img
+                          src="assets/images/homepage/pay-bill.svg"
+                          alt=""
+                        />Add to bill pay</a
+                      >
+                    </div>
+                  </div>
+                  <div class="transaction-amount-item amount-black">
+                    -$1,235.10
+                    <i
+                      class="blue-link margin-chevron fa-solid fa-chevron-right"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="transaction-btn">
+              <a href="#" class="btn btn-outline-primary"
+                >See all transactions</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="homepage-grid">
+        <div class="rewards card no-margin-card">
+          <div class="homepage-container">
+            <div class="homepage-flex-title">
+              <div class="homepage-title">Rewards</div>
+              <div class="homepage-chevron">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+            <div class="homepage-content">
+              <div class="homepage-logo">
+                <img src="assets/images/homepage/chase-logo.svg" alt="" />
+              </div>
+              <div class="homepage-text">
+                <p class="chase-score">85,000</p>
+                <p class="score-text">Champions Rewards points</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="chase-offers card no-margin-card">
+          <div class="homepage-container">
+            <div class="homepage-chase-title">Chase Offers</div>
+            <div class="homepage-chase-subtitle">For CREDIT CARD (...7177)</div>
+            <div class="offers-flex">
+              <div class="offer-card">
+                <div class="offer-card-container">
+                  <div class="card-header-flex">
+                    <div class="new-text"><a href="">New</a></div>
+                    <div class="plus-img">
+                      <img src="assets/images/homepage/blue-plus.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="center-image">
+                    <img src="assets/images/homepage/dropbox.png" alt="" />
+                  </div>
+                  <div class="subscription-only">Subscription Only</div>
+                  <div class="percentage-back">$20 back</div>
+                  <div class="time-left">37 days left</div>
+                </div>
+              </div>
+              <div class="offer-card">
+                <div class="offer-card-container">
+                  <div class="card-header-flex">
+                    <div class="new-text"><a href="">New</a></div>
+                    <div class="plus-img">
+                      <img src="assets/images/homepage/blue-plus.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="made-in">MADE IN</div>
+                  <div class="percentage-back made-in-back">10% back</div>
+                  <div class="time-left">14 days left</div>
+                </div>
+              </div>
+              <div class="offer-card">
+                <div class="offer-card-container">
+                  <div class="card-header-flex">
+                    <div class="new-text"><a href="">New</a></div>
+                    <div class="plus-img">
+                      <img src="assets/images/homepage/blue-plus.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="center-image">
+                    <img src="assets/images/homepage/lyat.svg" alt="" />
+                  </div>
+                  <div class="percentage-back back-lyas">%10 back</div>
+                  <div class="time-left">28 days left</div>
+                </div>
+              </div>
+            </div>
+            <div class="arrow-panel">
+              <div>
+                <button><i class="fa-solid fa-chevron-left"></i></button>
+              </div>
+              <div class="bullets">
+                <span class="bullet"></span>
+                <span class="bullet no-background-bullet"></span>
+              </div>
+              <div>
+                <button><i class="fa-solid fa-chevron-right"></i></button>
+              </div>
+            </div>
+            <p class="see-all-offers">
+              <a href="">
+                See all offers
+                <span class="background-blue-numbers">44</span></a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="travel card no-margin-card">
+          <div class="homepage-container">
+            <div class="homepage-flex-title">
+              <div class="homepage-title">Travel</div>
+              <div class="homepage-chevron">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+            <div class="homepage-content">
+              <div class="homepage-logo">
+                <img
+                  src="assets/images/homepage/airplane.svg"
+                  class="airplane-img"
+                  alt=""
+                />
+              </div>
+              <div class="homepage-text-airplane">
+                <p class="airplane-title">
+                  Explore adventures around the world
+                </p>
+                <p class="airplane-subtitle">
+                  Book hotels, flights, car rentals & more
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="plan-track card no-margin-card">
+          <div class="homepage-container">
+            <div class="homepage-flex-title">
+              <div class="homepage-title">Plan, track & manage</div>
+            </div>
+            <div class="plan-track-content">
+              <div class="homepage-flex-item">
+                <div class="flex-item-logo">
+                  <img src="assets/images/homepage/wallet.svg" alt="" />
+                </div>
+                <div class="flex-item-text">
+                  <div class="flex-item-title">Spending & Budgeting</div>
+                  <div class="flex-item-subtitle">
+                    Set a budget and track your spending
+                  </div>
+                </div>
+                <div class="flex-item-chevron">
+                  <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+              <div class="homepage-flex-item">
+                <div class="flex-item-logo">
+                  <img src="assets/images/homepage/speedometer.svg" alt="" />
+                </div>
+                <div class="flex-item-text">
+                  <div class="flex-item-title">Credit journey</div>
+                  <div class="flex-item-subtitle">
+                    Your credit score, alerts & identity restoration services
+                  </div>
+                </div>
+                <div class="flex-item-chevron">
+                  <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+              <div class="homepage-flex-item">
+                <div class="flex-item-logo">
+                  <img src="assets/images/homepage/house.svg" alt="" />
+                </div>
+                <div class="flex-item-text">
+                  <div class="flex-item-title">Chase MyHome</div>
+                  <div class="flex-item-subtitle">
+                    See rates, properties and insights, and manage your mortgage
+                  </div>
+                </div>
+                <div class="flex-item-chevron">
+                  <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+              <div class="homepage-flex-item">
+                <div class="flex-item-logo">
+                  <img src="assets/images/homepage/car.svg" alt="" />
+                </div>
+                <div class="flex-item-text">
+                  <div class="flex-item-title">Be car-confident</div>
+                  <div class="flex-item-subtitle">
+                    Get financing and insights to help you buy and own a car
+                  </div>
+                </div>
+                <div class="flex-item-chevron">
+                  <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="help-support card no-margin-card">
+          <div class="homepage-container">
+            <div class="homepage-flex-title">
+              <div class="homepage-title">Help & support</div>
+              <div class="homepage-chevron">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+            <div class="help-support-container">
+              <div class="help-support-text">
+                Get help replacing cards, reporting fraud, ordering checks,
+                exploring payment assistance, contacting us and more.
+              </div>
+              <div class="help-support-image">
+                <img src="assets/images/homepage/bulb.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="refer card no-margin-card">
+          <div class="homepage-container">
+            <div class="refer-flex">
+              <div class="refer-img">
+                <img src="assets/images/homepage/communication.svg" alt="" />
+              </div>
+              <div class="refer-text">
+                <div class="refer-title">Refer friends now</div>
+                <div class="refer-subtitle">
+                  Earn rewards when friends get approved for a credit card
+                </div>
+              </div>
+            </div>
+            <div class="refer-link"><a href="#">Start referring</a></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

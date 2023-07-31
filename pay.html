@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FAVICON -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="assets/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/82140ee0e8.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BOOTSTRAp -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="pay.css" />
+    <title>
+      Credit Card, Mortgage, Banking, Auto | Chase Online | Chase.com
+    </title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="nav_container_flex">
+          <div class="nav_left_side">
+            <div class="burger-menu">
+              <button class="burger-btn">
+                <div class="btn-primary"></div>
+              </button>
+            </div>
+            <div class="logo">
+              <a href="homepage.html">
+                <img src="assets/images/homepage/logo.png" alt="logo"
+              /></a>
+            </div>
+          </div>
+
+          <ul class="nav_links">
+            <li class="nav_link">
+              <a href="#">
+                <img src="assets/images/homepage/glass.png" alt=""
+              /></a>
+            </li>
+            <li class="nav_link">
+              <a href="#">
+                <img src="assets/images/homepage/flag.png" alt=""
+              /></a>
+            </li>
+            <li class="nav_link">
+              <a href="#"
+                ><img src="assets/images/homepage/account.png" alt=""
+              /></a>
+            </li>
+            <li class="nav_link"><a href="#">Sign out</a></li>
+          </ul>
+        </div>
+        <ul class="nav_alt_links">
+          <li class="nav_alt_link"><a href="homepage.html">Accounts</a></li>
+          <li class="nav_alt_link hover-pay-transfer">
+            <a class="padding-link" href="pay.html">Pay &transfer</a>
+            <div class="pay-transfer-hover">
+              <div class="pay-transfer-hover-grid">
+                <div class="pay-transfer-left-side">
+                  <p class="pay-bold"><a href="pay.html">PAY</a></p>
+                  <p class="pay-regular">
+                    <a href="#">Pay bills & send money with Zelle®</a>
+                  </p>
+                  <p class="pay-regular"><a href="#">Send a gift</a></p>
+                  <p class="pay-regular"><a href="#">Payment activity</a></p>
+                </div>
+                <div class="bar-grid"></div>
+                <div class="pay-transfer-right-side">
+                  <p class="pay-bold">
+                    <a href="schedule-transfer.html">TRANSFER</a>
+                  </p>
+                  <p class="pay-regular">
+                    <a href="schedule-transfer.html">Transfer money</a>
+                  </p>
+                  <p class="pay-regular">
+                    <a href="#">Wires & global transfers</a>
+                  </p>
+                  <p class="pay-regular">
+                    <a href="#">Card balance transfers</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav_alt_link">
+            <a href="plan-track.html">Plan & track</a>
+          </li>
+          <li class="nav_alt_link"><a href="#">Investments</a></li>
+          <li class="nav_alt_link">
+            <a href="security-page.html ">Security</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="alt-nav">
+      <div class="alt-nav-container">
+        <ul class="alt-nav-list">
+          <li class="alt-nav-link zelle-green">
+            <a href="">Pay bills & send money with Zelle®</a>
+          </li>
+          <li class="alt-nav-link">
+            <a class="green-underline" href="">Pay</a>
+          </li>
+          <li class="alt-nav-link"><a href="">Request & split</a></li>
+          <li class="alt-nav-link"><a href="">Payment activity</a></li>
+          <li class="alt-nav-link">
+            <a href=""><i class="fa-solid fa-ellipsis"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <main>
+      <p class="learn-more">
+        <a href=""
+          >Learn more about the new look
+          <i class="fa-solid fa-chevron-right"></i
+        ></a>
+      </p>
+      <div class="payment-due card">
+        <div class="card-container">
+          <div class="payment-due-text">
+            <i class="fa-solid fa-caret-right"></i> Payments due (0)
+          </div>
+        </div>
+      </div>
+      <div class="recipient card">
+        <div class="recipient-container">
+          <p class="recipient-title payment-due-text">Recipient list</p>
+          <div class="search-bar-flex">
+            <div class="search-bar">
+              <div class="placeholder-search-bar">
+                <i class="fa-solid fa-magnifying-glass magnifying-glass"></i>
+                Search for a recipient
+              </div>
+              <div class="close-search-bar">
+                <i class="fa-regular fa-circle-xmark"></i>
+              </div>
+            </div>
+            <div class="add-new">
+              <a href="#">
+                <img src="assets/images/homepage/blue-plus.svg" alt="" />
+                Add new recipient</a
+              >
+            </div>
+          </div>
+          <div class="choice-recipient">
+            <div class="all-recipient">
+              <a class="blue-overline" href="">All</a>
+            </div>
+            <div class="all-recipient"><a href="">My billers</a></div>
+            <div class="all-recipient">
+              <a href="">
+                My <span class="zelle-purple">Zelle</span> recipients</a
+              >
+            </div>
+          </div>
+          <div class="recipient-footer">
+            <p class="chase-accounts-title">CHASE ACCOUNTS</p>
+            <div class="card-recipient">
+              <div class="left-side-card">
+                <img src="assets/images/homepage/visa-card.jpeg" alt="" />
+                CREDIT CARD <span class="card-number">...7177</span>
+              </div>
+              <div class="right-side-card">
+                <a href="">Pay | <i class="fa-solid fa-ellipsis"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,1005 @@
+/* GENERAL SETTINGS */
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  color: var(--white);
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  background-color: #ebeff1;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+input,
+button {
+  appearance: none;
+  border: none;
+  background: transparent;
+}
+
+:root {
+  --nav-background: #0e46a3;
+  --text-primary: #000608;
+  --text-secondary: #454046;
+  --text-gray: #ada9ab;
+  --border-color: rgb(176, 176, 176);
+}
+
+/* NAV */
+
+.nav-container {
+  width: 94%;
+  margin: 0 auto;
+  padding-top: 8px;
+}
+
+.nav_container_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  color: white;
+  background-color: var(--nav-background);
+}
+
+.nav_link img {
+  width: 25px;
+  height: 25px;
+}
+
+.nav_left_side {
+  display: flex;
+  align-items: center;
+  width: 70px;
+  justify-content: space-between;
+}
+
+.nav_links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 17%;
+}
+
+.nav_link a {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* BURGER MENU */
+
+.burger-menu {
+  width: 28px;
+  height: 32px;
+}
+
+.burger-btn {
+  width: 100%;
+  height: 100%;
+}
+
+.btn-primary {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+}
+
+.btn-primary::after,
+.btn-primary::before {
+  content: "";
+  width: 100%;
+  height: inherit;
+  height: 2px;
+  background-color: inherit;
+}
+
+.btn-primary::before {
+  position: absolute;
+  top: -6px;
+  left: 0;
+  border-radius: inherit;
+}
+
+.btn-primary::after {
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  border-radius: inherit;
+}
+
+/* LOGO */
+
+.logo img {
+  width: 37px;
+  height: 32px;
+}
+
+/* NAV ALT LINKS */
+.nav_alt_links {
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 20px 0 10px;
+  width: 40%;
+  justify-content: space-between;
+  position: relative;
+}
+
+.pay-bold {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: rgb(98, 98, 98);
+}
+
+.pay-regular {
+  font-size: 1.3rem;
+  color: rgb(32, 32, 32);
+  font-weight: 400;
+}
+
+.pay-regular:hover {
+  border-bottom: 3px solid var(--text-gray);
+}
+
+.hover-pay-transfer:hover .pay-transfer-hover {
+  display: block;
+}
+
+.padding-link {
+  padding-bottom: 20px;
+}
+
+.pay-transfer-hover {
+  display: none;
+}
+
+.pay-transfer-hover-grid {
+  display: grid;
+  grid-template-columns: 1fr 2px 1fr;
+  position: absolute;
+  top: 51px;
+  z-index: 100;
+  background-color: white;
+  width: 90%;
+  padding: 10px 20px;
+  gap: 20px;
+  box-shadow: 1px 2px 6px 0px rgba(94, 94, 94, 1);
+}
+
+.bar-grid {
+  margin: auto;
+  height: 80%;
+  width: 100%;
+  background-color: var(--text-gray);
+}
+
+.pay-transfer-right-side {
+  grid-column: 3/4;
+}
+
+/* MAIN */
+main {
+  width: 94%;
+  margin: 0 auto;
+}
+
+/* BANK ACCOUNTS */
+
+.card {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  width: 100%;
+}
+
+.bank-accounts {
+  margin-top: 30px;
+}
+.bank-accounts-info-img img {
+  width: 20px;
+  height: 20px;
+}
+
+.bank-accounts-info {
+  display: flex;
+  width: 50px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  color: var(--text-secondary);
+}
+
+.bank-accounts-container {
+  padding-block: 10px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+  padding-inline: 2%;
+}
+
+.card-title {
+  font-size: 2rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.security-link a {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.checking-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checking-text {
+  color: var(--nav-background);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.transfer-money {
+  display: flex;
+  width: 250px;
+  justify-content: space-around;
+}
+
+.security-icon img {
+  width: 27px;
+  height: 27px;
+}
+
+.card-content {
+  width: 96.5%;
+  margin: 10px auto 0;
+}
+
+.balance-flex {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.balance {
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.balance-text {
+  border-bottom: 1px dotted var(--text-secondary);
+  color: var(--text-secondary);
+  width: fit-content;
+  font-size: 1.4rem;
+}
+
+.money-balance {
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: var(--text-secondary);
+}
+
+.money-underline-text {
+  color: #777777;
+  font-size: 1.4rem;
+}
+
+.deposit-withdraw {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.card-header-chevron {
+  font-size: 1.4rem;
+  color: var(--text-primary);
+}
+
+/* CREDIT CARDS */
+.credit-cards {
+  margin-block: 30px;
+}
+
+.interest-saving {
+  font-size: 1.2rem;
+  background-color: #c2e5ef;
+  padding: 3px;
+  border-radius: 2px;
+  margin-left: 10px;
+}
+
+.credit-cards-transfer {
+  width: 160px;
+}
+
+.card-disclaimer {
+  background-color: #f0f0f0;
+  margin-top: 15px;
+  padding: 7px 5px;
+  border-radius: 5px;
+}
+
+.card-disclaimer img {
+  width: 14px;
+  height: 14px;
+  position: relative;
+  bottom: 1px;
+  margin-right: 5px;
+}
+
+.balance-details {
+  color: #136eff;
+  font-size: 1.2rem;
+}
+
+.visa-card img {
+  object-fit: cover;
+  width: 100%;
+  height: 55px;
+}
+
+.credit-card-footer-list {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.smaller-text {
+  font-size: 1.3rem;
+}
+
+/* External accounts */
+
+.chevron-margin {
+  margin-left: 20px;
+}
+
+.blue-header {
+  color: var(--nav-background);
+  font-weight: 600;
+}
+
+.external-accounts-subtitle {
+  border-bottom: 1px solid var(--text-gray);
+}
+
+.liabilities {
+  margin-left: 30px;
+}
+
+.assets-text {
+  color: var(--text-gray);
+  font-size: 1.2rem;
+}
+
+.bold-external {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.header-noborder {
+  border: none;
+}
+
+.content-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-title {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 1.4rem;
+}
+
+.chevron-bank-name {
+  font-size: 1.3rem;
+}
+
+.accounts-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.accounts-text-inside {
+  margin-right: 5px;
+}
+
+.chevron-up-block {
+  position: relative;
+  top: 4px;
+}
+
+.chevron-down-block {
+  position: relative;
+  bottom: 4px;
+}
+
+.two-chevrons {
+  font-size: 1rem;
+}
+
+.border-accounts {
+  margin-top: 30px;
+  border-bottom: 2px solid var(--text-gray);
+}
+
+.cashback-flex {
+  border-bottom: 2px dotted var(--text-gray);
+  padding: 4px 0;
+}
+
+.cashback-header {
+  font-size: 1.2rem;
+}
+
+.value-text {
+  font-size: 1.2rem;
+}
+
+.checkings-text {
+  margin-right: 100px;
+}
+
+.savings-text {
+  margin-right: 70px;
+}
+
+.disclaimer-accounts {
+  text-align: right;
+  margin-top: 3px;
+  color: var(--text-secondary);
+}
+
+.discover-card {
+  padding-block: 13px;
+  border-top: 1px solid var(--text-gray);
+}
+
+.discover-card-margin {
+  margin-top: 10px;
+}
+
+.fidelity-investments {
+  margin-top: 0;
+  border-top: none;
+}
+
+.update-text {
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+.update-text img {
+  width: 13px;
+  height: 13px;
+  margin-right: 7px;
+}
+
+.blue-link {
+  color: var(--nav-background);
+  font-weight: 600;
+}
+
+.img-phone img {
+  object-fit: cover;
+  width: 100%;
+  height: 100px;
+}
+
+.primary-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.scan-link {
+  font-size: 1.4rem;
+  color: #136eff;
+  font-weight: 400;
+}
+
+.content-flex-width {
+  width: 95%;
+  justify-content: left;
+  margin: 0 auto;
+}
+
+.card {
+  margin-top: 30px;
+}
+
+.text-block-scan {
+  margin-left: 30px;
+}
+
+.chevron-title {
+  font-size: 1.3rem;
+  color: var(--text-secondary);
+}
+
+.card-container {
+  width: 95%;
+  margin: 10px auto;
+}
+
+.accounts-accordeon {
+  margin-top: 22px;
+  font-size: 1.5rem;
+}
+
+.accordeon-border {
+  border: 1px solid var(--text-secondary);
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+.left-margin-chevron {
+  margin-left: 15px;
+}
+
+.transactions-grid {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  border-bottom: 2px solid var(--text-gray);
+  padding-bottom: 5px;
+}
+
+.transaction-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.transaction-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 5.6fr 0.85fr;
+}
+
+.bill-pay img {
+  height: 15px;
+  position: relative;
+  bottom: 1px;
+}
+
+.pending-transaction {
+  font-size: 1.15rem;
+  font-weight: 600;
+  border-bottom: 1px dotted var(--text-secondary);
+  padding-top: 10px;
+}
+
+.transaction-description {
+  margin-top: 10px;
+}
+
+.transaction-description-content,
+.transaction-amount-item {
+  font-size: 1.15rem;
+  color: rgb(100, 100, 100);
+}
+
+.transaction-amount-item:first-child {
+  margin-top: 5px;
+}
+
+.transaction-amount-item {
+  margin-top: 20px;
+}
+
+.transaction-content {
+  margin-top: 20px;
+}
+
+.transaction-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dotted gray;
+  padding: 5px 2px;
+}
+
+.transaction-date-july {
+  grid-row: 2/3;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.transaction-description-content-last {
+  grid-row: 2/3;
+}
+
+.bill-pay {
+  margin-top: 12px;
+}
+
+.american-express {
+  color: black;
+  font-size: 1.2rem;
+}
+
+.american-express img {
+  width: 15px;
+}
+
+.amount-black {
+  color: black;
+  position: relative;
+  bottom: 20px;
+  left: 8px;
+}
+
+.margin-chevron {
+  position: relative;
+  left: 10px;
+}
+
+.transaction-content-grid {
+  border-bottom: 1px solid gray;
+}
+
+.noborder-transaction {
+  border: none;
+  margin-top: 8px;
+}
+
+.pending-underline {
+  border-bottom: 2px dotted var(--text-secondary);
+}
+
+.transaction-btn {
+  text-align: right;
+  margin-top: 15px;
+}
+
+.transaction-btn a {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+/* Homepage grid */
+
+.homepage-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.7fr 0.7fr 0.05fr 0.05fr 0.4fr 0.5fr 0.25fr 0.6fr;
+  gap: 30px;
+  margin: 30px 0 40px;
+}
+
+.chase-offers {
+  grid-row: 1/5;
+  grid-column: 2/3;
+}
+
+.plan-track {
+  grid-row: 3/8;
+}
+
+.help-support {
+  grid-row: 5/7;
+}
+
+.refer {
+  grid-row: 7/9;
+  position: relative;
+  top: 3%;
+}
+
+.homepage-container {
+  width: 95%;
+  margin: 15px auto;
+}
+
+.homepage-flex-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.homepage-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.homepage-chevron {
+  font-size: 1.3rem;
+}
+
+.homepage-content {
+  display: flex;
+  align-items: center;
+}
+
+.chase-score {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.homepage-logo {
+  width: 30px;
+}
+
+.homepage-text {
+  margin-left: 60px;
+}
+
+.homepage-text-airplane {
+  margin-left: 70px;
+}
+
+.airplane-img {
+  width: 90px;
+}
+
+.no-margin-card {
+  margin: 0;
+}
+
+.airplane-title {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 4px;
+}
+
+.airplane-subtitle {
+  font-size: 1.15rem;
+}
+
+.homepage-flex-item {
+  display: grid;
+  grid-template-columns: 70px 1.5fr 0.2fr;
+  align-items: center;
+  border-bottom: 1px solid rgb(186, 186, 186);
+  padding: 10px 0;
+}
+
+.homepage-flex-item:last-child {
+  border: none;
+}
+
+.flex-item-logo {
+  width: fit-content;
+}
+
+.flex-item-logo img {
+  width: 60px;
+}
+
+.flex-item-chevron {
+  font-size: 1.3rem;
+  text-align: right;
+}
+
+.flex-item-text {
+  text-align: left;
+}
+
+.flex-item-title {
+  font-size: 1.3rem;
+}
+
+.flex-item-subtitle {
+  color: gray;
+}
+
+.help-support-text {
+  font-size: 1.4rem;
+  color: gray;
+}
+
+.help-support-container {
+  display: flex;
+  align-items: center;
+}
+
+.help-support-image img {
+  width: 130px;
+}
+
+.refer-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgb(186, 186, 186);
+  padding-bottom: 10px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.refer-img img {
+  width: 150px;
+}
+
+.refer-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.refer-subtitle {
+  font-size: 1.1rem;
+  color: gray;
+}
+
+.refer-link {
+  font-size: 1.2rem;
+  color: #136eff;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.homepage-chase-title {
+  font-size: 1.6rem;
+  font-weight: 200;
+}
+
+.homepage-chase-subtitle {
+  font-weight: 600;
+  color: gray;
+}
+
+.offers-flex {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offer-card {
+  box-shadow: 1px 2px 6px 0px rgba(94, 94, 94, 1);
+  width: 31%;
+  height: 200px;
+}
+
+.offer-card-container {
+  width: 96%;
+  margin: 3px auto;
+  text-align: center;
+}
+
+.time-left {
+  color: gray;
+  font-size: 1.6rem;
+}
+
+.percentage-back {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.plus-img img {
+  width: 25px;
+}
+
+.back-lyas {
+  margin-top: 30px;
+}
+
+.new-text {
+  background-color: #136eff;
+  color: white;
+  padding: 2px 4px;
+  border: 20px;
+  font-size: 1.3rem;
+}
+
+.center-image {
+  margin-top: 30px;
+}
+
+.center-image img {
+  width: 70px;
+}
+
+.made-in {
+  margin-top: 30px;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.made-in-back {
+  margin-top: 55px;
+}
+
+.subscription-only {
+  margin-top: 25px;
+  background-color: black;
+  color: white;
+  padding: 2px 5px;
+  display: inline-block;
+}
+
+.card-header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+  margin: 0 auto;
+  margin-block: 20px;
+}
+
+.arrow-panel i {
+  font-size: 1.8rem;
+  color: gray;
+}
+
+.bullets {
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+  position: relative;
+  bottom: 2px;
+}
+
+.bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #136eff;
+  border: 1px solid gray;
+  border-radius: 50px;
+}
+
+.no-background-bullet {
+  background-color: transparent;
+}
+
+.see-all-offers {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  border-top: 1px solid rgb(212, 212, 212);
+  padding-top: 20px;
+  color: rgb(85, 116, 177);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.background-blue-numbers {
+  background-color: #136eff;
+  color: white;
+  padding: 3px;
+  border-radius: 50px;
+}
+
+@media only screen and (max-width: 1700px) {
+  .transaction-content-grid {
+    grid-template-columns: 1fr 6fr 0.8fr;
+  }
+}

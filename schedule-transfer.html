@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FAVICON -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="assets/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/82140ee0e8.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BOOTSTRAp -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="schedule-transfer.css" />
+    <title>
+      Credit Card, Mortgage, Banking, Auto | Chase Online | Chase.com
+    </title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="nav_container_flex">
+          <div class="nav_left_side">
+            <div class="burger-menu">
+              <button class="burger-btn">
+                <div class="btn-primary"></div>
+              </button>
+            </div>
+            <div class="logo">
+              <a href="homepage.html">
+                <img src="assets/images/homepage/logo.png" alt="logo"
+              /></a>
+            </div>
+          </div>
+
+          <ul class="nav_links">
+            <li class="nav_link">
+              <a href="#">
+                <img src="assets/images/homepage/glass.png" alt=""
+              /></a>
+            </li>
+            <li class="nav_link">
+              <a href="#">
+                <img src="assets/images/homepage/flag.png" alt=""
+              /></a>
+            </li>
+            <li class="nav_link">
+              <a href="#"
+                ><img src="assets/images/homepage/account.png" alt=""
+              /></a>
+            </li>
+            <li class="nav_link"><a href="#">Sign out</a></li>
+          </ul>
+        </div>
+        <ul class="nav_alt_links">
+          <li class="nav_alt_link"><a href="homepage.html">Accounts</a></li>
+          <li class="nav_alt_link hover-pay-transfer">
+            <a class="padding-link triangle-link" href="pay.html"
+              >Pay &transfer</a
+            >
+            <div class="pay-transfer-hover">
+              <div class="pay-transfer-hover-grid">
+                <div class="pay-transfer-left-side">
+                  <p class="pay-bold"><a href="pay.html">PAY</a></p>
+                  <p class="pay-regular">
+                    <a href="#">Pay bills & send money with Zelle®</a>
+                  </p>
+                  <p class="pay-regular"><a href="#">Send a gift</a></p>
+                  <p class="pay-regular"><a href="#">Payment activity</a></p>
+                </div>
+                <div class="bar-grid"></div>
+                <div class="pay-transfer-right-side">
+                  <p class="pay-bold">
+                    <a href="schedule-transfer.html">TRANSFER</a>
+                  </p>
+                  <p class="pay-regular">
+                    <a href="schedule-transfer.html">Transfer money</a>
+                  </p>
+                  <p class="pay-regular">
+                    <a href="#">Wires & global transfers</a>
+                  </p>
+                  <p class="pay-regular">
+                    <a href="#">Card balance transfers</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav_alt_link">
+            <a href="plan-track.html">Plan & track</a>
+          </li>
+          <li class="nav_alt_link"><a href="#">Investments</a></li>
+          <li class="nav_alt_link">
+            <a href="security-page.html">Security</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="alt-nav">
+      <div class="alt-nav-container">
+        <ul class="alt-nav-list">
+          <li class="alt-nav-link zelle-green">
+            <a class="" href="">Transfer money</a>
+          </li>
+          <li class="alt-nav-link">
+            <a class="green-underline" href="schedule-transfer.html"
+              >Schedule transfer</a
+            >
+          </li>
+          <li class="alt-nav-link">
+            <a href=""
+              ><a href="transfer-activity.html" class=""
+                >Transfer activity</a
+              ></a
+            >
+          </li>
+          <li class="alt-nav-link">
+            <a class="" href="">External accounts</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <main>
+      <div class="transfer-main">
+        <div class="transfer-container">
+          <div class="transfer-from transfer-grid-item">
+            <div class="transfer-title">Transfer from</div>
+            <div class="select-box">
+              <select>
+                <option selected>Chose an account</option>
+                <option></option>
+              </select>
+            </div>
+            <div class="transfer-disclaimer">
+              Don't see your account?
+              <a href="" class="add-external"
+                >Add an external checking or savings account</a
+              >
+            </div>
+          </div>
+
+          <div class="transfer-to transfer-grid-item">
+            <div class="transfer-title">Transfer to</div>
+            <div class="select-box select-box-blocked">
+              <select disabled>
+                <option selected>Chose an account</option>
+                <option></option>
+              </select>
+            </div>
+          </div>
+          <div class="amount transfer-grid-item">
+            <div class="transfer-title">Amount</div>
+            <div class="amount-input"><input type="text" value="$" /></div>
+          </div>
+          <div class="transfer-date transfer-grid-item">
+            <div class="transfer-title">Transfer date</div>
+            <div class="date-input">
+              <input type="text" name="" id="dateInput" />
+              <img
+                src="assets/images/homepage/calendar.svg"
+                alt=""
+                class="calendar-icon"
+              />
+            </div>
+          </div>
+          <div class="transfer-grid-item memo">
+            <div class="transfer-title">Memo (optional)</div>
+            <div class="memo-input">
+              <input type="text" maxlength="32" />
+            </div>
+            <div class="transfer-disclaimer">
+              Use letters and numbers only (up to 32 characters).
+            </div>
+          </div>
+          <div class="repeating">
+            <div class="repeating-text">Set up repeating transfers</div>
+            <div class="repeating-btn"></div>
+            <div class="status-text">Off</div>
+          </div>
+          <div class="transfer-btns">
+            <div class="cancel-btn"><button type="submit">Cancel</button></div>
+            <div class="next-btn">
+              <button
+                type="submit
+                "
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      const dateInput = document.getElementById("dateInput");
+
+      dateInput.addEventListener("input", event => {
+        const inputValue = event.target.value;
+        const formattedValue = formatDateString(inputValue);
+        event.target.value = formattedValue;
+      });
+
+      function formatDateString(input) {
+        // Remove any non-numeric characters from the input
+        const numericInput = input.replace(/\D/g, "");
+
+        // Format the date with dots
+        if (numericInput.length >= 3 && numericInput.length < 5) {
+          return `${numericInput.slice(0, 2)}.${numericInput.slice(2)}`;
+        } else if (numericInput.length >= 5 && numericInput.length < 7) {
+          return `${numericInput.slice(0, 2)}.${numericInput.slice(
+            2,
+            4
+          )}.${numericInput.slice(4)}`;
+        } else if (numericInput.length >= 7) {
+          return `${numericInput.slice(0, 2)}.${numericInput.slice(
+            2,
+            4
+          )}.${numericInput.slice(4, 8)}`;
+        }
+
+        return numericInput;
+      }
+
+      const repeatingBtn = document.querySelector(".repeating-btn");
+      const statusText = document.querySelector(".status-text");
+      statusText.innerText = "Off";
+
+      repeatingBtn.addEventListener("click", () => {
+        if (repeatingBtn.classList.contains("status-on")) {
+          repeatingBtn.classList.remove("status-on");
+          statusText.innerText = "Off";
+        } else {
+          repeatingBtn.classList.add("status-on");
+          statusText.innerText = "On";
+        }
+      });
+    </script>
+  </body>
+</html>

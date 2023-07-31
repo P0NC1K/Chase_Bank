@@ -1,0 +1,385 @@
+* GENERAL SETTINGS */ *,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  color: var(--white);
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  background-color: #ebeff1;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+input,
+button {
+  appearance: none;
+  border: none;
+  background: transparent;
+}
+
+:root {
+  --nav-background: #0e46a3;
+  --text-primary: #000608;
+  --text-secondary: #454046;
+  --text-gray: #ada9ab;
+  --border-color: rgb(176, 176, 176);
+}
+
+/* NAV */
+
+.nav-container {
+  width: 94%;
+  margin: 0 auto;
+  padding-top: 8px;
+}
+
+.nav_container_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  color: white;
+  background-color: var(--nav-background);
+}
+
+.nav_link img {
+  width: 25px;
+  height: 25px;
+}
+
+.nav_left_side {
+  display: flex;
+  align-items: center;
+  width: 70px;
+  justify-content: space-between;
+}
+
+.nav_links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 17%;
+}
+
+.nav_link a {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* BURGER MENU */
+
+.burger-menu {
+  width: 28px;
+  height: 32px;
+}
+
+.burger-btn {
+  width: 100%;
+  height: 100%;
+}
+
+.btn-primary {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+}
+
+.btn-primary::after,
+.btn-primary::before {
+  content: "";
+  width: 100%;
+  height: inherit;
+  height: 2px;
+  background-color: inherit;
+}
+
+.btn-primary::before {
+  position: absolute;
+  top: -6px;
+  left: 0;
+  border-radius: inherit;
+}
+
+.btn-primary::after {
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  border-radius: inherit;
+}
+
+.card {
+  background-color: white;
+  border-top: 1px solid var(--border-color);
+  width: 100%;
+  margin: 0;
+}
+
+/* LOGO */
+
+.logo img {
+  width: 37px;
+  height: 32px;
+}
+
+/* NAV ALT LINKS */
+.nav_alt_links {
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 20px 0 10px;
+  width: 40%;
+  justify-content: space-between;
+  position: relative;
+}
+
+.pay-bold {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: rgb(98, 98, 98);
+}
+
+.pay-regular {
+  font-size: 1.3rem;
+  color: rgb(32, 32, 32);
+  font-weight: 400;
+}
+
+.pay-regular:hover {
+  border-bottom: 3px solid var(--text-gray);
+}
+
+.hover-pay-transfer:hover .pay-transfer-hover {
+  display: block;
+}
+
+.padding-link {
+  padding-bottom: 20px;
+}
+
+.pay-transfer-hover {
+  display: none;
+}
+
+.triangle-link {
+  position: relative;
+}
+
+.triangle-link::after {
+  content: "\A";
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  border-right: solid 17px transparent;
+  border-left: solid 17px transparent;
+  border-bottom: solid 17px white;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0px;
+}
+
+.pay-transfer-hover-grid {
+  display: grid;
+  grid-template-columns: 1fr 2px 1fr;
+  position: absolute;
+  top: 51px;
+  z-index: 100;
+  background-color: white;
+  width: 90%;
+  padding: 10px 20px;
+  gap: 20px;
+  box-shadow: 1px 2px 6px 0px rgba(94, 94, 94, 1);
+}
+
+.bar-grid {
+  margin: auto;
+  height: 80%;
+  width: 100%;
+  background-color: var(--text-gray);
+}
+
+.pay-transfer-right-side {
+  grid-column: 3/4;
+}
+
+.alt-nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.green-underline {
+  border-bottom: 4px solid rgb(8, 99, 8);
+  padding-bottom: 6px;
+}
+
+.zelle-green {
+  color: white;
+  background-color: rgb(8, 99, 8);
+  padding: 8px 10px;
+}
+
+.alt-nav {
+  width: 100%;
+  position: relative;
+  bottom: 10px;
+  background-color: white;
+  padding-block: px;
+}
+
+.alt-nav-container {
+  width: 35%;
+}
+
+.transfer-activity {
+  width: 100%;
+  background-color: white;
+  position: relative;
+  bottom: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--text-gray);
+  padding-bottom: 100px;
+}
+
+.transfer-activity-container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.transfer-choice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 3px solid var(--nav-background);
+  border-radius: 5px;
+  font-size: 2.1rem;
+  font-weight: 200;
+  color: var(--text-secondary);
+  padding: 3px 10px;
+}
+
+.transfer-choice-chevron {
+  font-size: 1.6rem;
+  color: var(--text-secondary);
+}
+
+.filter-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr 1fr 0.2fr;
+}
+
+.transfer-display-option img {
+  width: 25px;
+  cursor: pointer;
+}
+
+.filter-by {
+  font-size: 1.4rem;
+  color: var(--text-secondary);
+  font-weight: 200px;
+}
+
+.filter-choose-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--text-gray);
+  color: var(--text-secondary);
+  width: 60%;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  padding: 4px 6px;
+  cursor: pointer;
+}
+
+.transfer-money-link {
+  color: #305693;
+  font-size: 1.2rem;
+}
+
+.transfer-image-border {
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 4px;
+}
+
+.transfer-display-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.transfer-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.6fr 1fr 1.4fr 0.7fr;
+
+  margin: 50px auto 2px;
+  border-bottom: 1px solid var(--text-gray);
+}
+
+.transfer-info-item {
+  margin: 0 auto;
+  color: rgb(90, 90, 90);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.transfer-info-item:first-child i {
+  font-size: 1.4rem;
+  margin-left: 5px;
+}
+
+.transfer-info-item:first-child {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.transfer-info-item:first-child i {
+  color: #0e46a3;
+}
+
+.no-transition-activity {
+  color: #454046;
+  font-size: 1.7rem;
+  border-bottom: 1px solid var(--text-gray);
+  padding-top: 8px;
+  padding-bottom: 9px;
+}
+
+.terms-transfer {
+  margin-top: 20px;
+  color: #ada9ab;
+  font-size: 1rem;
+}
+
+.transfer-agreement {
+  color: #5c88ce;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1500px) {
+  .alt-nav-container {
+    width: 40%;
+  }
+}
